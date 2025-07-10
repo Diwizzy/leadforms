@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя Лидформа</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h2>Оставьте заявку</h2>
+        <form id="leadForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required />
+
+            <label for="email">Email (необязательно):</label>
+            <input type="email" id="email" />
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="statusMessage"></div>
+    </div>
+
+    <!-- VK SDK -->
+    <script src="https://unpkg.com/ @vk/sdk@latest/dist/vk-sdk.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
